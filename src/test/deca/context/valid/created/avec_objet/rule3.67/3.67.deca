@@ -1,0 +1,36 @@
+// Test pour la règle 3.67
+// Date: 18/01/2024
+// Auteur: Jerome
+
+class ClasseAvecVariable {
+    int variable;
+
+    // Affectation valide à une variable de classe
+    void modifierVariable(int nouvelleValeur) {
+        this.variable = nouvelleValeur;
+    }
+
+    // Utilisation correcte de la variable dans une expression
+    void incrementerVariable() {
+        this.variable = this.variable + 1;
+    }
+
+    void afficherVariable() {
+        println("Valeur actuelle de la variable: " + this.variable);
+    }
+}
+
+class Test {
+    void executionTest() {
+        ClasseAvecVariable obj = new ClasseAvecVariable();
+        obj.modifierVariable(10);
+        obj.incrementerVariable();
+        obj.afficherVariable();  // Doit afficher "Valeur actuelle de la variable: 11"
+    }
+}
+
+// Programme principal
+{
+    Test testProgramme = new Test();
+    testProgramme.executionTest();
+}

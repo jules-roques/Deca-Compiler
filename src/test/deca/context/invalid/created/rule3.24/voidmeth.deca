@@ -1,0 +1,17 @@
+// Résultat erreur:
+//    Utilisation de 'Return' avec valeur dans une méthode void (règle 3.24)
+//
+// Description:
+//    Tests de programme incorrect contextuellement ('Return' avec valeur dans une méthode void)
+//
+// Auteur:
+//    Jerome
+//
+// Historique:
+//    Créé le 16/01/2024
+
+class MaClasse {
+    void maMethode() {
+        return 5;  
+    }
+}

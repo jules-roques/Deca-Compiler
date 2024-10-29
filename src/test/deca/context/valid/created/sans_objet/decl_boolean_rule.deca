@@ -1,0 +1,26 @@
+// Règles attendues (occurences dans lignes du fichier résultat):
+// Program 24:0
+//     ListDeclClass
+//     Main 24:0
+//         ListDeclVar
+//             DeclVar 25:12
+//                 Identifier 25:4
+//                 boolean 
+//                 Identifier 25:12
+//                 boolean 25:12 
+//                 Initialization 25:19
+//                     BooleanLiteral 25:19
+//                     boolean 
+//         ListInst
+//
+// Auteur: Carmel
+//
+// Historique:
+//    cree le 14/01/2024
+//
+// Description:
+//    test de programme syntaxiquement correct.
+
+{
+    boolean bool = true;
+}

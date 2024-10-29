@@ -1,0 +1,29 @@
+// Règles attendues (occurences dans lignes du fichier résultat):
+//  Program 26:0
+//      ListDeclClass
+//      Main 26:0
+//          ListDeclVar
+//              DeclVar 27:8
+//                  Identifier 27:4
+//                  Identifier 27:8
+//                  Initialization 27:12
+//                      Int 27:12
+//          ListInst
+//              Assign 28:4
+//                  Identifier 28:4
+//                      Multiply 28:10
+//                      Identifier 28:8
+//                      Int 28:12
+//
+// Auteur: Aymeric, Jules
+//
+// Historique:
+//    cree le 10/01/2024
+//
+// Description:
+//    test de programme syntaxiquement correct.
+
+{
+    int i = 3;
+    i = i * 2;
+}

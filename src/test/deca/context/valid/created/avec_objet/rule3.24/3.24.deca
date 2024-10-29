@@ -1,0 +1,40 @@
+// Test pour la règle 3.24
+// Date: 18/01/2024
+// Auteur: Jerome
+
+class ClasseRetour {
+    // Méthode retournant un entier
+    int methodeRetourneInt() {
+        return 10;
+    }
+
+    // Méthode avec un retour conditionnel
+    int methodeRetourConditionnel(int valeur) {
+        if (valeur > 5) {
+            return 1;
+        } else {
+            return 0;
+        }
+    }
+
+    // Méthode sans retour (void)
+    void methodeSansRetour() {
+        println("Pas de retour pour cette méthode");
+        // Pas d'instruction return nécessaire ici
+    }
+}
+
+class Test {
+    void executionTest() {
+        ClasseRetour obj = new ClasseRetour();
+        println(obj.methodeRetourneInt());
+        println(obj.methodeRetourConditionnel(10));
+        obj.methodeSansRetour();
+    }
+}
+
+// Programme principal
+{
+    Test testProgramme = new Test();
+    testProgramme.executionTest();
+}

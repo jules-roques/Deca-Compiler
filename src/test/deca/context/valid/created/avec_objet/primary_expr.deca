@@ -1,0 +1,18 @@
+// Programme Deca pour tester l'opérateur primary_expr
+// Date: 21/01/2024
+// Auteur: Jerome
+
+class TestPrimaryExpr {
+    void test() {
+        // Cas 4: READINT
+        int valeurLueInt = readInt();
+        println("Valeur entière lue: " + valeurLueInt);
+    }
+}
+
+
+// Programme principal
+{
+    TestPrimaryExpr test = new TestPrimaryExpr();
+    test.test();
+}

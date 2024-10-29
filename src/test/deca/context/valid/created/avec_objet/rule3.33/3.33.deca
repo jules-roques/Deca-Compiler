@@ -1,0 +1,32 @@
+// Test pour la règle 3.33
+// Date: 18/01/2024
+// Auteur: Jerome
+
+class ClasseOperateursBinaires {
+    int addition(int a, int b) {
+        return a + b;  // Opérateur binaire '+'
+    }
+
+    float multiplication(float a2, float b2) {
+        return a2 * b2;  // Opérateur binaire '*'
+    }
+
+    boolean comparaison(int a3, int b3) {
+        return a3 > b3;  // Opérateur binaire '>'
+    }
+
+}
+
+class Test {
+    void executionTest() {
+        ClasseOperateursBinaires obj = new ClasseOperateursBinaires();
+        println(obj.addition(5, 3));
+        println(obj.multiplication(2.5f, 4.0f));
+    }
+}
+
+// Programme principal
+{
+    Test testProgramme = new Test();
+    testProgramme.executionTest();
+}

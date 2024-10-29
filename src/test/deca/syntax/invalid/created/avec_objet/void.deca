@@ -1,0 +1,17 @@
+// Résultat erreur:
+//    Affectation à une constante ou une expression non affectable (règle 3.32)
+//
+// Description:
+//    Tests de programme incorrect contextuellement (lvalue invalide dans l'affectation)
+//
+// Auteur:
+//    Jerome
+//
+// Historique:
+//    Créé le 16/01/2024
+
+class MaClasse {
+    void maMethode() {
+        5 = x; 
+    }
+}

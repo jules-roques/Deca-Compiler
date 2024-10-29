@@ -1,0 +1,22 @@
+// Résultat erreur:
+//    Utilisation d'un identificateur de méthode non déclaré (règle 3.72)
+//
+// Description:
+//    Tests de programme incorrect contextuellement (utilisation d'un identificateur de méthode non déclaré)
+//
+// Auteur:
+//    Jerome
+//
+// Historique:
+//    Créé le 16/01/2024
+
+class MaClasse {
+    // Pas de méthode déclarée ici
+}
+
+class Test {
+    int testMethod() {
+        MaClasse obj = new MaClasse();
+        return obj.methodeInexistante();
+    }
+}

@@ -1,0 +1,41 @@
+// Description:
+//    Programme Deca complexe avec des structures de contrôle imbriquées.
+
+// Auteur:
+//    Jerome
+
+// Historique:
+//    Créé le 16/01/2024
+
+{
+    // Déclaration de variables
+    int i = 0;
+    int j = 10;
+    int m = 0;
+    int k = 18;
+
+    // Boucle externe while
+    while (i < j) {    
+        i = i + 1;
+        // Condition if-else imbriquée dans la boucle for
+        if (k / 2 == 0) {
+              println("k est pair");
+        } else {
+            println("k est impair");
+
+            // Boucle while imbriquée dans le else
+           
+            while (m < 3) {
+                 println("Petite boucle while: m = ");
+                m = m + 1;
+            }
+        }
+
+        // Condition if-else après la boucle for
+        if (i == j / 2) {
+            print("i est à la moitié de j");
+        } else if (i == j - 1) {
+            print("i est presque égal à j");
+        }
+    }
+}

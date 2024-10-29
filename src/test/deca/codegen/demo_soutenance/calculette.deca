@@ -1,0 +1,192 @@
+{
+    int numeroOperation;
+    int numTypeCalcul;
+
+    int opGaucheInt;
+    int opDroitInt;
+    float opGaucheFloat;
+    float opDroitFloat;
+
+    int resultatInt;
+    float resultatFloat;
+    boolean resultatBool;
+
+    int readContinuer;
+    boolean continuer = true;
+
+    println("Bienvenue dans votre calculatrice binaire...");
+    println();
+
+
+    while (continuer) {
+
+        // Quelle opération ?
+        println("Quel type d'opréation voulez-vous effectuer ?");
+        println("1. Addition                    6. Plus petit ou égal à");
+        println("2. Soustraction                7. Strictement plus petit que");
+        println("3. Multiplication              8. Plus grand ou égal à");
+        println("4. Division                    9. Strictement plus grand que");
+        println("5. Modulo (entre entiers)      10. Egal à");
+
+        print("Choisissez votre calcul (chiffre entre 1 et 10): ");
+        numeroOperation = readInt();
+        while (numeroOperation < 1 || numeroOperation >= 11) {
+            print("Veuillez choisir une valeur entre 1 et 10: ");
+            numeroOperation = readInt();
+        }
+
+        // Avec quels types de valeurs ?
+        if (numeroOperation == 5) {  // Si l'opération est un modulo on a des entiers
+            numTypeCalcul = 2;
+        } else {
+            print("Avec des valeurs flottantes (1) ou entières (2) ? ");
+            numTypeCalcul = readInt();
+            while (numTypeCalcul != 1 && numTypeCalcul != 2) {
+                print("Veuillez choisir une valeur entre 1 et 2 : ");
+                numTypeCalcul = readInt();
+            }
+        }
+        
+
+        // Opérande gauche
+        print("Choisissez l'opérande gauche ");
+        if (numTypeCalcul == 1) {
+            print("(flottant) : ");
+            opGaucheFloat = readFloat();
+        } else {
+            print("(entier) : ");
+            opGaucheInt = readInt();
+        }
+
+        // Opérende droit
+        print("Choisissez l'opérande droit ");
+        if (numTypeCalcul == 1) {
+            print("(flottant) : ");
+            opDroitFloat = readFloat();
+        } else {
+            print("(entier) : ");
+            opDroitInt = readInt();
+        }
+        println();
+
+
+
+        // Résultat du calcul
+        println("Résultat du calcul");
+        if (numTypeCalcul == 1) {
+
+            // Calcul sur des flottants
+            if (numeroOperation == 1) {
+                print(opGaucheFloat, " + ", opDroitFloat, " = ", (opGaucheFloat + opDroitFloat));
+            } else if (numeroOperation == 2) {
+                print(opGaucheFloat, " - ", opDroitFloat, " = ", (opGaucheFloat - opDroitFloat));
+            } else if (numeroOperation == 3) {
+                print(opGaucheFloat, " * ", opDroitFloat, " = ", (opGaucheFloat * opDroitFloat));
+            } else if (numeroOperation == 4) {
+                print(opGaucheFloat, " / ", opDroitFloat, " = ", (opGaucheFloat / opDroitFloat));
+            } else if (numeroOperation == 6) {
+                print(opGaucheFloat, " <= ", opDroitFloat, " : ");
+                if (opGaucheFloat <= opDroitFloat) {
+                    print("Vrai !");
+                } else {
+                    print("Faux !");
+                }
+            } else if (numeroOperation == 7) {
+                print(opGaucheFloat, " < ", opDroitFloat, " : ");
+                if (opGaucheFloat < opDroitFloat) {
+                    print("Vrai !");
+                } else {
+                    print("Faux !");
+                }
+            } else if (numeroOperation == 8) {
+                print(opGaucheFloat, " >= ", opDroitFloat, " : ");
+                if (opGaucheFloat >= opDroitFloat) {
+                    print("Vrai !");
+                } else {
+                    print("Faux !");
+                }
+            } else if (numeroOperation == 9) {
+                print(opGaucheFloat, " > ", opDroitFloat, " : ");
+                if (opGaucheFloat > opDroitFloat) {
+                    print("Vrai !");
+                } else {
+                    print("Faux !");
+                }
+            } else if (numeroOperation == 10) {
+                print(opGaucheFloat, " == ", opDroitFloat, " : ");
+                if (opGaucheFloat == opDroitFloat) {
+                    print("Vrai !");
+                } else {
+                    print("Faux !");
+                }
+            }        
+
+        } else {
+
+            // Calcul sur des entiers
+            if (numeroOperation == 1) {
+                print(opGaucheInt, " + ", opDroitInt, " = ", (opGaucheInt + opDroitInt));
+            } else if (numeroOperation == 2) {
+                print(opGaucheInt, " - ", opDroitInt, " = ", (opGaucheInt - opDroitInt));
+            } else if (numeroOperation == 3) {
+                print(opGaucheInt, " * ", opDroitInt, " = ", (opGaucheInt * opDroitInt));
+            } else if (numeroOperation == 4) {
+                print(opGaucheInt, " / ", opDroitInt, " = ", (opGaucheInt / opDroitInt));
+            } else if (numeroOperation == 5) {
+                print(opGaucheInt, " % ", opDroitInt, " = ", (opGaucheInt % opDroitInt));
+            }else if (numeroOperation == 6) {
+                print(opGaucheInt, " <= ", opDroitInt, " : ");
+                if (opGaucheInt <= opDroitInt) {
+                    print("Vrai !");
+                } else {
+                    print("Faux !");
+                }
+            } else if (numeroOperation == 7) {
+                print(opGaucheInt, " < ", opDroitInt, " : ");
+                if (opGaucheInt < opDroitInt) {
+                    print("Vrai !");
+                } else {
+                    print("Faux !");
+                }
+            } else if (numeroOperation == 8) {
+                print(opGaucheInt, " >= ", opDroitInt, " : ");
+                if (opGaucheInt >= opDroitInt) {
+                    print("Vrai !");
+                } else {
+                    print("Faux !");
+                }
+            } else if (numeroOperation == 9) {
+                print(opGaucheInt, " > ", opDroitInt, " : ");
+                if (opGaucheInt > opDroitInt) {
+                    print("Vrai !");
+                } else {
+                    print("Faux !");
+                }
+            } else if (numeroOperation == 10) {
+                print(opGaucheInt, " == ", opDroitInt, " : ");
+                if (opGaucheInt == opDroitInt) {
+                    print("Vrai !");
+                } else {
+                    print("Faux !");
+                }
+            }     
+        }
+        println();
+        println();
+
+        println("Voulez-vous effectuer une nouvelle opération ?");
+        print("1. Oui       0. Non : ");
+        readContinuer = readInt();
+        while (readContinuer != 1 && readContinuer != 0) {
+            print("Veuillez choisir une valeur entre 1 et 0 : ");
+            readContinuer = readInt();
+        }
+
+        println();
+
+
+        if (readContinuer == 0) {
+            continuer = false;
+        }
+    }        
+}

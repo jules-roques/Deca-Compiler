@@ -1,0 +1,19 @@
+// Résultat exécution ima
+// false
+//
+// Description:
+//    tests d'exécution d'un programme correct par ima
+//
+// Auteur:
+//    Eliott
+//
+// Historique:
+//    cree le 19/01/2024
+
+{
+    boolean x = false, y = true, z = false;
+    boolean resultatExpression = (x || y) && (y && z) || (x && z);
+    if (!resultatExpression) {
+        print("false");
+    }
+}

@@ -1,0 +1,26 @@
+// Test pour la règle 3.31
+// Date: 18/01/2024
+// Auteur: Jerome
+
+class ClasseImpression {
+    void methodeImpression() {
+        int valeurInt = 10;
+        float valeurFloat = 3.14f;
+
+        println(valeurInt);  // Expression imprimable de type int
+        println(valeurFloat);  // Expression imprimable de type float
+    }
+}
+
+class Test {
+    void executionTest() {
+        ClasseImpression obj = new ClasseImpression();
+        obj.methodeImpression();
+    }
+}
+
+// Programme principal
+{
+    Test testProgramme = new Test();
+    testProgramme.executionTest();
+}

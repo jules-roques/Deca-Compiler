@@ -1,0 +1,19 @@
+// Résultat erreur:
+//    Opération binaire sur des types incompatibles (règle 3.33)
+//
+// Description:
+//    Tests de programme incorrect contextuellement (opération binaire avec types incompatibles)
+//
+// Auteur:
+//    Jerome
+//
+// Historique:
+//    Créé le 16/01/2024
+
+class MaClasse {
+    void maMethode() {
+        int x = 5;
+        string y = "texte";
+        int z = x + y; 
+    }
+}

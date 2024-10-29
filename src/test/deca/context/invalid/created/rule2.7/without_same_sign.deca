@@ -1,0 +1,32 @@
+// Résultat erreur:
+//    Signature de méthode ou type de retour non conforme lors de la redéfinition (règle 2.7)
+//
+// Description:
+//    Tests de programme incorrect contextuellement (redéfinition de méthode incorrecte)
+//
+// Auteur:
+//    Jerome
+//
+// Historique:
+//    Créé le 16/01/2024
+
+class SuperType {
+    // Définition du champ dans la superclasse
+}
+
+class SuperClasse {
+    SuperClasse maMethod() {
+        println("il ne se passe rien");
+    }
+}
+
+class SousType extends SuperType {
+    // Définition de champs spécifiques à SousType
+}
+
+class SousClasse extends SuperClasse {
+    SousType maMethod() {
+        println("il ne se passe rien non plus");
+    } 
+}
+

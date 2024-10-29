@@ -1,0 +1,23 @@
+// Résultat erreur:
+//    Signature de méthode ou type de retour non conforme lors de la redéfinition (règle 2.7)
+//
+// Description:
+//    Tests de programme incorrect contextuellement (redéfinition de méthode incorrecte)
+//
+// Auteur:
+//    Jerome
+//
+// Historique:
+//    Créé le 16/01/2024
+
+class SuperClasse {
+    void maMethode() {
+       
+    }
+}
+
+class SousClasse extends SuperClasse {
+    double maMethode() { 
+        return 0.0;
+    }
+}

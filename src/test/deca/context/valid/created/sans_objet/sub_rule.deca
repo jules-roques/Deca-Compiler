@@ -1,0 +1,37 @@
+// Règles attendues (occurences dans lignes du fichier résultat):
+//  Program 34:0
+//      ListDeclClass
+//      Main 34:0
+//          ListDeclVar
+//              DeclVar 35:8
+//                  Identifier 35:4
+//                  int
+//                  Identifier 35:8
+//                  int 35:8
+//                  Initialization 35:12
+//                      Int 35:12
+//                      int
+//          ListInst
+//              Assign 36:4
+//              int
+//                  Identifier 36:4
+//                  int 35:8
+//                      Minus 36:10
+//                      int
+//                          Identifier 36:8
+//                          int 35:8 
+//                          Int 36:12
+//                          int
+//
+// Auteur: Carmel, jules
+//
+// Historique:
+//    cree le 14/01/2024
+//
+// Description:
+//    test de programme contextuellement correct.
+
+{
+    int i = 1;
+    i = i - 3;
+}

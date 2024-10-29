@@ -1,0 +1,8 @@
+class A {
+    int entier;
+}
+
+{
+    A a = null;
+    a.entier = 5;
+}

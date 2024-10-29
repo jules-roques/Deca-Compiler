@@ -1,0 +1,21 @@
+// Résultat erreur:
+//    Condition non booléenne avec opérateur binaire inapproprié (règle 3.29)
+//
+// Description:
+//    Tests de programme incorrect contextuellement (utilisation d'opérateur binaire inapproprié dans 'if')
+//
+// Auteur:
+//    Jerome
+//
+// Historique:
+//    Créé le 16/01/2024
+
+class MaClasse {
+    void maMethode() {
+        int x = 5;
+        int y = 10;
+        if (x + y) { 
+            
+        }
+    }
+}

@@ -1,0 +1,28 @@
+// Test pour la règle 0.2
+// Date: 18/01/2024
+// Auteur: Jerome
+
+class ClasseBase {
+    // Utilisation des types prédéfinis
+    int entier = 10;
+    float flottant = 3.14;
+    boolean booleen = true;
+
+    void afficherAttributs() {
+        println(entier);
+        println(flottant);
+    }
+}
+
+class Test {
+    void testMethod() {
+        ClasseBase obj = new ClasseBase();
+        obj.afficherAttributs();
+    }
+}
+
+// Programme principal
+{
+    Test testProgramme = new Test();
+    testProgramme.testMethod();
+}

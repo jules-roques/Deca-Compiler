@@ -1,0 +1,21 @@
+// Résultat erreur:
+//    16:12
+//    Bloc de méthode manquant (règle 3.14)
+//
+// Description:
+//    Tests de programme incorrect contextuellement (corps de méthode manquant)
+//
+// Auteur:
+//    Jerome
+//
+// Historique:
+//    Créé le 16/01/2024
+
+class MaClasse {
+    int methodeCorrecte() {
+        int resultat = 42;
+        return resultat;
+    }
+    
+    methodeIncorrecte(); 
+}

@@ -1,0 +1,28 @@
+// Programme Deca pour tester les opérateurs LEQ et GEQ
+// Date: 21/01/2024
+// Auteur: Jerome
+
+class TestInequality {
+    void test() {
+        int a = 5;
+        int b = 10;
+
+        // Test du cas 1: opérateur LEQ (<=)
+        if (a <= b) {
+            // Cette condition devrait déclencher le cas 1 dans votre analyseur
+            println(a + " est inférieur ou égal à " + b);
+        }
+
+        // Test du cas 2: opérateur GEQ (>=)
+        if (b >= a) {
+            // Cette condition devrait déclencher le cas 2 dans votre analyseur
+            println(b + " est supérieur ou égal à " + a);
+        }
+    }
+}
+
+// Programme principal
+{
+    TestInequality test = new TestInequality();
+    test.test();
+}

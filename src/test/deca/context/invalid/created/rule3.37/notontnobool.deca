@@ -1,0 +1,18 @@
+// Résultat erreur:
+//    Opérateur 'not' sur un type non booléen (règle 3.37)
+//
+// Description:
+//    Tests de programme incorrect contextuellement (opérateur 'not' sur type non booléen)
+//
+// Auteur:
+//    Jerome
+//
+// Historique:
+//    Créé le 16/01/2024
+
+class MaClasse {
+    void maMethode() {
+        int x = 5;
+        boolean y = !x; 
+    }
+}

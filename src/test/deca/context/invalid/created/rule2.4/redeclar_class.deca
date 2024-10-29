@@ -1,0 +1,17 @@
+// Résultat erreur:
+//    16:8
+//    nom de champ déjà déclaré (règle 2.4)
+//
+// Description:
+//    Tests de programme incorrect contextuellement (redéclaration de champ)
+//
+// Auteur:
+//    Jerome
+//
+// Historique:
+//    Créé le 16/01/2024
+
+class MaClasse {
+    int monChamp;
+    int monChamp; 
+}

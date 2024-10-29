@@ -1,0 +1,27 @@
+// Règles attendues (occurences dans lignes du fichier résultat):
+// Program 23:0
+//      ListDeclClass
+//      Main 23:0
+//          ListDeclVar
+//          ListInst
+//              IfThenElse 24:4
+//                  BooleanLiteral 24:8
+//                  ListInst
+//                      Println 25:8
+//                          ListExpr
+//                              StringLiteral 25:16
+//                  ListInst
+//
+// Auteur: Aymeric, Jules
+//
+// Historique:
+//    cree le 10/01/2024
+//
+// Description:
+//    test de programme syntaxiquement correct.
+
+{
+    if (true) {
+        println("Hello world !");
+    }
+}

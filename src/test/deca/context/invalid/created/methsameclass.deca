@@ -1,0 +1,30 @@
+// Programme Deca pour tester la déclaration de plusieurs mauvaises methodes
+// Date: 21/01/2024
+// Auteur: Jerome
+
+class TestDeclarations {
+    void test() {
+        // Déclaration de plusieurs variables de type int
+        boolean var1, var2, var3, var4;
+        // Assignation des valeurs aux variables
+        var1 = true;
+        var2 = false;
+        
+    }
+
+    void test() {
+        // Déclaration de plusieurs variables de type int
+        boolean var4;
+        // Assignation des valeurs aux variables
+        var4 = false;
+        
+        // Affichage des valeurs des variables
+        
+    }
+}
+
+// Programme principal
+{
+    TestDeclarations test = new TestDeclarations();
+    test.test();
+}

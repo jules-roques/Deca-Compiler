@@ -1,0 +1,37 @@
+// Test pour la règle 3.66
+// Date: 18/01/2024
+// Auteur: Jerome
+
+class ClasseBase {
+    protected int champProtege = 10;
+
+}
+
+class ClasseDerivee extends ClasseBase {
+
+    void afficherChampProtege() {
+        // Accès valide au champ protégé de la classe de base
+        println("Champ protégé: " + champProtege);
+    }
+}
+
+class ClasseExterne {
+    void testerAcces(ClasseBase objetBase) {
+        
+    }
+}
+
+class Test {
+    void executionTest() {
+        ClasseDerivee objetDerive = new ClasseDerivee();
+        ClasseExterne objetExterne = new ClasseExterne();
+        objetDerive.afficherChampProtege();
+        objetExterne.testerAcces(objetDerive);
+    }
+}
+
+// Programme principal
+{
+    Test testProgramme = new Test();
+    testProgramme.executionTest();
+}

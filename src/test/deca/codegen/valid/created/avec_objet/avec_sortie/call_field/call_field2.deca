@@ -1,0 +1,20 @@
+// Résultat exécution ima
+// 100
+//
+// Description:
+//    tests d'exécution d'un programme correct par ima
+//
+// Auteur:
+//    Eliott
+//
+// Historique:
+//    cree le 21/01/2024
+
+class ConstantsClass {
+    int max_value = 100;
+}
+
+{
+        ConstantsClass constants = new ConstantsClass();
+        print(constants.max_value);
+}

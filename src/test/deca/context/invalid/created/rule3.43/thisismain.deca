@@ -1,0 +1,25 @@
+// Résultat erreur:
+//    Appel de méthode sur un type non-classe (règle 3.41)
+//
+// Description:
+//    Tests de programme incorrect contextuellement (appel de méthode sur un type non-classe)
+//
+// Auteur:
+//    grand manitou
+//
+// Historique:
+//    Créé le 22/01/2024
+
+class MaClasse {
+    int aymeric = 0;
+    
+    int getNombre() {
+        return 5;
+    }
+
+}
+
+{
+    int i = 1;
+    this.aymeric;
+}

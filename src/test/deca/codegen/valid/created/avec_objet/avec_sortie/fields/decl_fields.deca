@@ -1,0 +1,28 @@
+// Résultat exécution ima
+// 8
+// 1
+//
+// Description:
+//    tests d'exécution d'un programme correct par ima
+//
+// Auteur:
+//    Eliott
+//
+// Historique:
+//    cree le 22/01/2024
+
+class SimpleClass {
+    int intValue1, intValue2;
+    boolean booleanValue;
+}
+
+{
+    int entier = 8;
+    SimpleClass instance = new SimpleClass();
+    instance.intValue1 = entier;
+    instance.intValue2 = 1;
+    instance.booleanValue = true;
+
+    println(instance.intValue1);
+    println(instance.intValue2);
+}

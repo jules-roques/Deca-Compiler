@@ -1,0 +1,18 @@
+// Résultat erreur:
+//    Affectation d'une valeur incompatible (règle 3.28)
+//
+// Description:
+//    Tests de programme incorrect contextuellement (incompatibilité de type dans l'affectation)
+//
+// Auteur:
+//    Jerome
+//
+// Historique:
+//    Créé le 16/01/2024
+
+class MaClasse {
+    void maMethode() {
+        int maVariable;
+        maVariable = "texte";
+    }
+}

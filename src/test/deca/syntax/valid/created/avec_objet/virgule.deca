@@ -1,0 +1,16 @@
+// Programme Deca pour tester la déclaration de plusieurs variables
+// Date: 21/01/2024
+// Auteur: Jerome
+
+class TestDeclarations {
+    void test() {
+        // Déclaration de plusieurs variables de type int
+        int a, b, c, d;
+    }
+}
+
+// Programme principal
+{
+    TestDeclarations test = new TestDeclarations();
+    test.test();
+}

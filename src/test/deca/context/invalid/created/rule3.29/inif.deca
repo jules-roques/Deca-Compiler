@@ -1,0 +1,21 @@
+// Résultat erreur:
+//    16:12
+//    Condition non booléenne dans 'if' (règle 3.29)
+//
+// Description:
+//    Tests de programme incorrect contextuellement (condition 'if' non booléenne)
+//
+// Auteur:
+//    Jerome
+//
+// Historique:
+//    Créé le 16/01/2024
+
+class MaClasse {
+    void maMethode() {
+        int x = 5;
+        if (x) { 
+            
+        }
+    }
+}

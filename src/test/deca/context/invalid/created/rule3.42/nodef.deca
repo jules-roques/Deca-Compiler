@@ -1,0 +1,18 @@
+// Résultat erreur:
+//    Création d'une instance d'une classe non définie (règle 3.42)
+//
+// Description:
+//    Tests de programme incorrect contextuellement (création d'instance d'une classe non définie)
+//
+// Auteur:
+//    Jerome
+//
+// Historique:
+//    Créé le 16/01/2024
+
+class MaClasse {
+    int maMethode() {
+        ClasseInexistante obj = new ClasseInexistante(); // Tentative de création d'une instance d'une classe non définie
+        return 0;
+    }
+}

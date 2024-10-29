@@ -1,0 +1,18 @@
+// Résultat erreur:
+//    Lvalue identifiant une méthode plutôt qu'une variable (règle 3.67)
+//
+// Description:
+//    Tests de programme incorrect contextuellement (lvalue identifiant une méthode)
+//
+// Auteur:
+//    Jerome
+//
+// Historique:
+//    Créé le 16/01/2024
+
+class MaClasse {
+    int maMethode() {
+        maMethode = 5;
+        return 0;
+    }
+}

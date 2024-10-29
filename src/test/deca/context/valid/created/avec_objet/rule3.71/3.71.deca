@@ -1,0 +1,25 @@
+// Test pour la règle 3.71
+// Date: 18/01/2024
+// Auteur: Jerome
+
+class ClasseAvecMethode {
+    int calculerSomme(int a, int b) {
+        return a + b;
+    }
+}
+
+class TestAppelDeMethode {
+    void executionTest() {
+        ClasseAvecMethode objet = new ClasseAvecMethode();
+
+        // Appel valide de la méthode avec les bons types d'arguments
+        int somme = objet.calculerSomme(10, 5);
+        println("Somme calculée: " + somme);
+    }
+}
+
+// Programme principal
+{
+    TestAppelDeMethode testProgramme = new TestAppelDeMethode();
+    testProgramme.executionTest();
+}

@@ -1,0 +1,17 @@
+// Résultat erreur:
+//    15:3
+//    le type du champ ne peut pas être 'void' (règle 2.5)
+//
+// Description:
+//    tests de programme incorrect contextuellement ( le type du champ ne peut pas être 'void' )
+//
+// Auteur:
+//    Jerome
+//
+// Historique:
+//    cree le 13/01/2024
+
+{
+   void i;
+   
+}

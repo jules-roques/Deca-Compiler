@@ -1,0 +1,16 @@
+// Résultat exécution ima
+// 2.00000e+01
+//
+// Description:
+//    tests d'exécution d'un programme correct par ima
+//
+// Auteur:
+//    Eliott
+//
+// Historique:
+//    cree le 20/01/2024
+
+{
+    int nombre = 50;
+    println(nombre - 30.0);
+}

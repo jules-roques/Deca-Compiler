@@ -1,0 +1,37 @@
+// Test pour la règle 0.1
+// Date: 18/01/2024
+// Auteur: Jerome
+
+class MaClasse {
+    int attribut;
+
+    void setAttribut(int newValue) {
+        this.attribut = newValue;
+    }
+
+    int getAttribut() {
+        return this.attribut;
+    }
+}
+
+class AutreClasse {
+    MaClasse objetClasse = new MaClasse();
+
+    void testSetGet() {
+        objetClasse.setAttribut(5);
+        println(objetClasse.getAttribut());
+    }
+}
+
+class Test {
+    void testMethod() {
+        AutreClasse testObjet = new AutreClasse();
+        testObjet.testSetGet();
+    }
+}
+
+// Programme principal
+{
+    Test testProgramme = new Test();
+    testProgramme.testMethod();
+}

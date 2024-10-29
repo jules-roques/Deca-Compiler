@@ -1,0 +1,48 @@
+// Test pour la règle 2.2
+// Date: 18/01/2024
+// Auteur: Jerome
+
+// Classe de base
+class ClasseDeBase {
+    int attributBase;
+
+    void methodeBase() {
+        println("Méthode de la classe de base.");
+    }
+}
+
+// Première classe dérivée
+class PremiereClasseDerivee extends ClasseDeBase {
+    int attributDerivee;
+
+    void methodeDerivee() {
+        println("Méthode de la première classe dérivée.");
+    }
+}
+
+// Seconde classe dérivée
+class SecondeClasseDerivee extends ClasseDeBase {
+    int autreAttributDerivee;
+
+    void autreMethodeDerivee() {
+        println("Méthode de la seconde classe dérivée.");
+    }
+}
+
+class Test {
+    void testMethod() {
+        ClasseDeBase objBase = new ClasseDeBase();
+        PremiereClasseDerivee objPremiere = new PremiereClasseDerivee();
+        SecondeClasseDerivee objSeconde = new SecondeClasseDerivee();
+
+        objBase.methodeBase();
+        objPremiere.methodeDerivee();
+        objSeconde.autreMethodeDerivee();
+    }
+}
+
+// Programme principal
+{
+    Test testProgramme = new Test();
+    testProgramme.testMethod();
+}

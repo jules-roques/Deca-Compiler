@@ -1,0 +1,19 @@
+// Résultat erreur:
+//    Affectation à un identifiant qui n'est pas une variable (règle 3.67)
+//
+// Description:
+//    Tests de programme incorrect contextuellement (affectation à un identifiant non variable)
+//
+// Auteur:
+//    Jerome
+//
+// Historique:
+//    Créé le 16/01/2024
+
+class MaClasse {
+    int maMethode() {
+        int x = 5;
+        x() = 10;
+        return x;
+    }
+}

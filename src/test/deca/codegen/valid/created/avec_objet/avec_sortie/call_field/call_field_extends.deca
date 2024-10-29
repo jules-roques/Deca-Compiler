@@ -1,0 +1,29 @@
+// Résultat exécution ima
+// 123
+// 5
+//
+// Description:
+//    tests d'exécution d'un programme correct par ima
+//
+// Auteur:
+//    Eliott
+//
+// Historique:
+//    cree le 21/01/2024
+
+class Employee {
+    int employeeId;
+}
+
+class Manager extends Employee {
+    int numberOfSubordinates;
+}
+
+{
+    Manager manager = new Manager();
+    manager.employeeId = 123;
+    manager.numberOfSubordinates = 5;
+
+    println(manager.employeeId);
+    println(manager.numberOfSubordinates);
+}

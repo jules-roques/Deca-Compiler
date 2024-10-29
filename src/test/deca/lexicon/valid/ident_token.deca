@@ -1,0 +1,28 @@
+// Tokens attendus:
+//    IDENT
+//    IDENT
+//    IDENT
+//    IDENT
+//    IDENT
+//    IDENT
+//    IDENT
+//    IDENT
+//    IDENT
+//
+// Auteur: Aymeric
+//
+// Historique:
+//    cree le 10/01/2024
+//
+// Description:
+//    test de programme lexicalement correct.
+
+$_
+_$
+A1
+$1
+AA
+_A
+$A
+$$
+__

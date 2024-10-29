@@ -1,0 +1,24 @@
+// Résultat erreur:
+//    Mauvaise signature d'une méthode appelée (règle 3.72)
+//
+// Description:
+//    Tests de programme incorrect contextuellement (mauvaise signature de méthode)
+//
+// Auteur:
+//    Jerome
+//
+// Historique:
+//    Créé le 16/01/2024
+
+class MaClasse {
+    int maMethode(int param) {
+        return param * 2;
+    }
+}
+
+class Test {
+    int testMethod() {
+        MaClasse obj = new MaClasse();
+        return obj.maMethode("texte");
+    }
+}

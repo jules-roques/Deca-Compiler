@@ -1,0 +1,19 @@
+// Résultat exécution ima
+//
+// Description:
+//    Test d'exécution d'un programme avec une boucle while et une condition OR par ima
+//
+// Auteur:
+//    Votre Carmel
+//
+// Historique:
+//    cree le 21/01/2024
+
+{
+    int x = 1;
+
+    while (x < 10 || x % 3 != 0) {
+        println(x);
+        x = x + 2;
+    }
+}

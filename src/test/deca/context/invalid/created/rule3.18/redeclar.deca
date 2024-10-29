@@ -1,0 +1,19 @@
+// Résultat erreur:
+//    15:10
+//    nom de champ déjà déclaré (règle jsp)
+//
+// Description:
+//    Tests de programme incorrect contextuellement (redéclaration de variable)
+//
+// Auteur:
+//    Jerome
+//
+// Historique:
+//    Créé le 16/01/2024
+
+class MaClasse {
+    void maMethode() {
+        int maVariable = 5;
+        int maVariable = 10;  
+    }
+}

@@ -1,0 +1,22 @@
+// Résultat erreur:
+//    Accès incorrect à un champ protégé depuis une classe non parente (règle 3.70)
+//
+// Description:
+//    Tests de programme incorrect contextuellement (accès incorrect à un champ protégé)
+//
+// Auteur:
+//    Jerome
+//
+// Historique:
+//    Créé le 16/01/2024
+
+class ClasseParente {
+    protected int champProtege = 5;
+}
+
+class ClasseNonParente {
+    int uneMethode() {
+        ClasseParente obj = new ClasseParente();
+        return obj.champProtege;
+    }
+}

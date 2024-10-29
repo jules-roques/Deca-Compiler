@@ -1,0 +1,17 @@
+// Résultat erreur:
+//    Utilisation de variable non déclarée (règle 3.18)
+//
+// Description:
+//    Tests de programme incorrect contextuellement (variable non déclarée utilisée)
+//
+// Auteur:
+//    Jerome
+//
+// Historique:
+//    Créé le 16/01/2024
+
+class MaClasse {
+    void maMethode() {
+        println(variableNonDeclaree);
+    }
+}

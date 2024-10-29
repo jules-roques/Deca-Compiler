@@ -1,0 +1,23 @@
+// Programme Deca pour tester les differents type de neq
+// Date: 21/01/2024
+// Auteur: Jerome
+
+class TestEqNeqExpression {
+    void test() {
+        int a = 5;
+        int b = 10;
+        int c = 15;
+        int d = 15;
+
+        // Test case for '!=' operator
+        if ((a != b)) {
+            println("a is not equal to b");
+        }
+    }
+}
+
+// Main program to run the test
+{
+    TestEqNeqExpression test = new TestEqNeqExpression();
+    test.test();
+}

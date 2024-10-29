@@ -1,0 +1,32 @@
+// Test pour la règle 3.7
+// Date: 18/01/2024
+// Auteur: Jerome
+
+class ClasseAvecInitialisations {
+    // Initialisation correcte d'un champ avec un littéral compatible
+    int champEntier = 5;
+
+    // Méthode démontrant l'initialisation correcte de variables locales
+    void methodeAvecInitialisations() {
+        // Initialisation avec des littéraux compatibles
+        float variableFlottante = 3.14;
+        boolean variableBooleenne = true;
+
+        // Affichage des variables
+        println("Entier: " + champEntier);
+        println("Flottant: " + variableFlottante);
+    }
+}
+
+class Test {
+    void testMethod() {
+        ClasseAvecInitialisations objet = new ClasseAvecInitialisations();
+        objet.methodeAvecInitialisations();
+    }
+}
+
+// Programme principal
+{
+    Test testProgramme = new Test();
+    testProgramme.testMethod();
+}

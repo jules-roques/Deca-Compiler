@@ -1,0 +1,18 @@
+// Résultat erreur:
+//    15:14
+//
+// Description:
+//    Tests de programme incorrect contextuellement 
+//
+// Auteur:
+//    Eliott
+//
+// Historique:
+//    Créé le 22/01/2024
+
+{
+    int a = 10;
+    if (a < 8 {
+        print("ok");
+    }
+}

@@ -1,0 +1,39 @@
+// Test pour la règle 2.4
+// Date: 18/01/2024
+// Auteur: Jerome
+
+class ClasseDeBase {
+    int attributBase;
+
+    void methodeBase() {
+        println("Attribut de ClasseDeBase: " + attributBase);
+    }
+}
+
+class ClasseDerivee extends ClasseDeBase {
+    int attributDerivee;
+
+    void methodeDerivee() {
+        println("Attribut de ClasseDerivee: " + attributDerivee);
+    }
+
+    void demoAccesAttributs() {
+        attributBase = 10;  // Accès à l'attribut de la classe de base
+        attributDerivee = 20; // Accès à l'attribut de la classe dérivée
+        this.methodeBase(); // Appel de la méthode de la classe de base
+        this.methodeDerivee(); // Appel de la méthode de la classe dérivée
+    }
+}
+
+class Test {
+    void testMethod() {
+        ClasseDerivee objet = new ClasseDerivee();
+        objet.demoAccesAttributs();
+    }
+}
+
+// Programme principal
+{
+    Test testProgramme = new Test();
+    testProgramme.testMethod();
+}

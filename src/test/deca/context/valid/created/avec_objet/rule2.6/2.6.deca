@@ -1,0 +1,40 @@
+// Test pour la règle 2.6
+// Date: 18/01/2024
+// Auteur: Jerome
+
+class ClasseDeBase {
+    // Méthode avec une signature spécifique dans la classe de base
+    int methodeBase(int param) {
+        println("Méthode de base avec param: " + param);
+        return param;
+    }
+}
+
+class ClasseDerivee extends ClasseDeBase {
+    // Méthode avec la même signature que dans la classe de base
+    int methodeBase(int param) {
+        int result = param;
+        println("Méthode redéfinie dans ClasseDerivee avec param: " + param);
+        return result * 2;
+    }
+
+    // Une autre méthode propre à ClasseDerivee
+    void methodeDerivee() {
+        println("Méthode spécifique à ClasseDerivee");
+    }
+}
+
+class Test {
+    void testMethod() {
+        ClasseDerivee objet = new ClasseDerivee();
+        int result = objet.methodeBase(10);
+        println("Résultat retourné: " + result);
+        objet.methodeDerivee();
+    }
+}
+
+// Programme principal
+{
+    Test testProgramme = new Test();
+    testProgramme.testMethod();
+}

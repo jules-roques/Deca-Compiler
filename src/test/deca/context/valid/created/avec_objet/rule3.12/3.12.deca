@@ -1,0 +1,33 @@
+// Test pour la règle 3.12
+// Date: 18/01/2024
+// Auteur: Jerome
+
+class ClasseAvecMethodes {
+    // Méthode avec plusieurs paramètres correctement déclarés
+    void methodeAvecParametres(int param1, float param2) {
+        println("Paramètres reçus: " + param1 + ", " + param2);
+    }
+
+    // Méthode avec un seul paramètre
+    void methodeAvecUnParametre(boolean flag) {
+        if (flag) {
+            println("Le drapeau est vrai.");
+        } else {
+            println("Le drapeau est faux.");
+        }
+    }
+}
+
+class Test {
+    void testMethod() {
+        ClasseAvecMethodes objet = new ClasseAvecMethodes();
+        objet.methodeAvecParametres(10, 3.14);
+        objet.methodeAvecUnParametre(true);
+    }
+}
+
+// Programme principal
+{
+    Test testProgramme = new Test();
+    testProgramme.testMethod();
+}

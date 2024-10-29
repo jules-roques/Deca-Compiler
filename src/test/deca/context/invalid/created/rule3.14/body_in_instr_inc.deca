@@ -1,0 +1,23 @@
+// Résultat erreur:
+//    21:23
+//    Instruction incorrecte dans le corps de méthode (règle 3.14)
+//
+// Description:
+//    Tests de programme incorrect contextuellement (corps de méthode avec instruction incorrecte)
+//
+// Auteur:
+//    Jerome
+//
+// Historique:
+//    Créé le 16/01/2024
+
+class MaClasse {
+    int methodeCorrecte() {
+        int resultat = 42;
+        return resultat;
+    }
+    
+    void methodeIncorrecte() {
+        int probleme = "Erreur"; 
+    }
+}

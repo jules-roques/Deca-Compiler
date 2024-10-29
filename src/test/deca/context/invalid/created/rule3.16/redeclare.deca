@@ -1,0 +1,16 @@
+// Résultat erreur:
+//    Redéclaration de variable dans la même classe (règle 3.16)
+//
+// Description:
+//    Tests de programme incorrect contextuellement (redéclaration de variable)
+//
+// Auteur:
+//    Jerome
+//
+// Historique:
+//    Créé le 16/01/2024
+
+class MaClasse {
+    int maVariable;
+    float maVariable; 
+}

@@ -1,0 +1,20 @@
+// Programme Deca pour tester le cas 'NULL' dans la méthode literal()
+// Date: 22/01/2024
+// Auteur: Jerome
+
+class TestNull {
+    void test() {
+        // Cas NULL : Utilisation du mot-clé 'NULL'
+        Object monObjet = null;
+        if (monObjet == null) {
+            println("monObjet est null");
+        }
+    }
+}
+
+// Programme principal
+{
+    TestNull test = null;
+    TestNull test = new TestNull();
+    test.test();
+}

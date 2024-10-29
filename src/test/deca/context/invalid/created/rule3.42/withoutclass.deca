@@ -1,0 +1,18 @@
+// Résultat erreur:
+//    Utilisation de 'New' avec un type non-classe (règle 3.42)
+//
+// Description:
+//    Tests de programme incorrect contextuellement ('New' utilisé avec un type non-classe)
+//
+// Auteur:
+//    Jerome
+//
+// Historique:
+//    Créé le 16/01/2024
+
+class MaClasse {
+    int maMethode() {
+        int x = new int();
+        return 1;
+    }
+}

@@ -1,0 +1,29 @@
+// Résultat exécution ima
+// 8
+//
+// Description:
+//    tests d'exécution d'un programme correct par ima
+//
+// Auteur:
+//    Eliott
+//
+// Historique:
+//    cree le 21/01/2024
+
+class MathOperations {
+    public int add(int a, int b) {
+        return a + b;
+    }
+}
+
+class AdvancedMathOperations extends MathOperations {
+    public int multiply(int a, int b) {
+        return a * b;
+    }
+}
+
+{
+    AdvancedMathOperations calculator = new AdvancedMathOperations();
+    int sumResult = calculator.add(5, 3);
+    println(sumResult);
+}

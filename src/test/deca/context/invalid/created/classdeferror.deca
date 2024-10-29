@@ -1,0 +1,12 @@
+// Programme Deca pour déclencher une erreur ClassDefinition
+// Date: 21/01/2024
+// Auteur: Jerome
+
+class MyClass {
+    int myField;
+}
+
+{
+    MyClass myVar;  // 'MyClass' doit être une classe
+    NotaClass ll;
+}

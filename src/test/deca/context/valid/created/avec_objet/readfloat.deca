@@ -1,0 +1,18 @@
+// Programme Deca pour tester l'opérateur readFloat
+// Date: 21/01/2024
+// Auteur: Jerome
+
+
+class TestReadFloat {
+    void main() {
+        float value;
+        value = readFloat(); // This line should trigger the READFLOAT case
+        println(value); // Output the read value
+    }
+}
+
+// Instantiate and run the test
+{
+    TestReadFloat test = new TestReadFloat();
+    test.main();
+}

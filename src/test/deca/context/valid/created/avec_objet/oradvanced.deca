@@ -1,0 +1,23 @@
+// Programme Deca pour tester l'opérateur or
+// Date: 21/01/2024
+// Auteur: Jerome
+
+
+class TestOrExpression {
+    void test() {
+        boolean a = true;
+        boolean b = false;
+        boolean c = false;
+
+        // Utilisation de l'opérateur OR pour déclencher la récursion
+        if (a || b || c) {
+            println("L'expression a || b || c est vraie");
+        }
+    }
+}
+
+// Programme principal
+{
+    TestOrExpression test = new TestOrExpression();
+    test.test();
+}

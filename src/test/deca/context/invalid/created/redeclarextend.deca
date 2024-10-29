@@ -1,0 +1,25 @@
+// Programme Deca pour tester la déclaration de plusieurs mauvaises methodes
+// Date: 21/01/2024
+// Auteur: Jerome
+
+class TestDeclarations {
+    
+    
+   int test = 6;
+}
+
+class Test extends TestDeclarations {
+    
+    int test(){
+        return 12;
+    }
+    
+   
+}
+
+// Programme principal
+
+{
+    Test tt = new Test();
+    tt.test();
+}

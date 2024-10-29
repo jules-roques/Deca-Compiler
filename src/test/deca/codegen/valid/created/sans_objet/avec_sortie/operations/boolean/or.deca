@@ -1,0 +1,20 @@
+// Résultat exécution ima
+// Opérateur 'and' fonctionne
+//
+// Description:
+//    tests d'exécution d'un programme correct par ima
+//
+// Auteur:
+//    Eliott
+//
+// Historique:
+//    cree le 19/01/2024
+
+{
+    boolean bool1 = false;
+    boolean bool2 = true;
+    if (bool1 || bool2) {
+        println("Opérateur 'and' fonctionne");
+    }
+}
+

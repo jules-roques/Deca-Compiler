@@ -1,0 +1,17 @@
+// Résultat erreur:
+//    'Return' avec valeur incompatible (règle 3.24)
+//
+// Description:
+//    Tests de programme incorrect contextuellement ('Return' avec valeur incompatible)
+//
+// Auteur:
+//    Jerome
+//
+// Historique:
+//    Créé le 16/01/2024
+
+class MaClasse {
+    int maMethode() {
+        return "texte";  
+    }
+}

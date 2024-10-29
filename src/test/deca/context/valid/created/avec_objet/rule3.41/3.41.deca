@@ -1,0 +1,31 @@
+// Test pour la règle 3.41
+// Date: 18/01/2024
+// Auteur: Jerome
+
+class ClasseAvecMethodes {
+    // Méthode avec paramètres
+    int addition(int a, int b) {
+        return a + b;
+    }
+
+    // Méthode sans paramètres
+    void afficherMessage() {
+        println("Message affiché");
+    }
+}
+
+class Test {
+    void executionTest() {
+        ClasseAvecMethodes obj = new ClasseAvecMethodes();
+        int resultat = obj.addition(5, 3);  // Appel correct avec des arguments compatibles
+        println("Résultat de l'addition: " + resultat);
+        
+        obj.afficherMessage();  // Appel correct sans arguments
+    }
+}
+
+// Programme principal
+{
+    Test testProgramme = new Test();
+    testProgramme.executionTest();
+}

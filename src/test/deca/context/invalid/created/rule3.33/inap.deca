@@ -1,0 +1,19 @@
+// Résultat erreur:
+//    Opérateur binaire utilisé de manière inappropriée (règle 3.33)
+//
+// Description:
+//    Tests de programme incorrect contextuellement (utilisation inappropriée d'opérateur binaire)
+//
+// Auteur:
+//    Jerome
+//
+// Historique:
+//    Créé le 16/01/2024
+
+class MaClasse {
+    void maMethode() {
+        boolean x = true;
+        boolean y = false;
+        int z = x && y; 
+    }
+}

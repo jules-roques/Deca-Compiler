@@ -1,0 +1,18 @@
+// Résultat erreur:
+//    Opérateur unaire appliqué à un type incompatible (règle 3.37)
+//
+// Description:
+//    Tests de programme incorrect contextuellement (opérateur unaire avec type incompatible)
+//
+// Auteur:
+//    Jerome
+//
+// Historique:
+//    Créé le 16/01/2024
+
+class MaClasse {
+    void maMethode() {
+        string x = "texte";
+        string y = -x; 
+    }
+}

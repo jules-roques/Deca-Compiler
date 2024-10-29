@@ -1,0 +1,16 @@
+// Résultat exécution ima
+// 0x1p+4
+//
+// Description:
+//    tests d'exécution d'un programme correct par ima
+//
+// Auteur:
+//    Jules
+//
+// Historique:
+//    cree le 15/01/2024
+
+{
+   printx(16.0);
+}
+

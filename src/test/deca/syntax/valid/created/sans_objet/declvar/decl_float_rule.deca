@@ -1,0 +1,23 @@
+// Règles attendues (occurences dans lignes du fichier résultat):
+// Program 21:0
+//     ListDeclClass
+//     Main 21:0 
+//         ListDeclVar
+//             DeclVar 22:10
+//                 Identifier 22:4
+//                 Identifier 22:10
+//                 Initialization 22:16
+//                     Float 22:16
+//         ListInst
+//
+// Auteur: Eliott, Jules
+//
+// Historique:
+//    cree le 12/01/2024
+//
+// Description:
+//    test de programme syntaxiquement correct.
+
+{
+    float dec = 1.2;
+}

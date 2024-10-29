@@ -1,0 +1,18 @@
+// Résultat erreur:
+//    Utilisation incorrecte de l'opérateur unaire 'minus' (règle 3.37)
+//
+// Description:
+//    Tests de programme incorrect contextuellement (utilisation incorrecte de 'minus')
+//
+// Auteur:
+//    Jerome
+//
+// Historique:
+//    Créé le 16/01/2024
+
+class MaClasse {
+    void maMethode() {
+        boolean x = true;
+        int y = -x; 
+    }
+}

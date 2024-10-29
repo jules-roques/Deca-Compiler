@@ -1,0 +1,18 @@
+// Résultat erreur:
+//    Utilisation d'un identifiant non déclaré comme lvalue (règle 3.67)
+//
+// Description:
+//    Tests de programme incorrect contextuellement (identifiant non déclaré utilisé comme lvalue)
+//
+// Auteur:
+//    Jerome
+//
+// Historique:
+//    Créé le 16/01/2024
+
+class MaClasse {
+    int maMethode() {
+        maVariableNonDeclaree = 5;
+        return 0;
+    }
+}

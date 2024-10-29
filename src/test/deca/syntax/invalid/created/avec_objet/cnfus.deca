@@ -1,0 +1,26 @@
+// Résultat erreur:
+//    Confusion entre identificateur de méthode et de variable (règle 3.72)
+//
+// Description:
+//    Tests de programme incorrect contextuellement (confusion entre identificateur de méthode et de variable)
+//
+// Auteur:
+//    Jerome
+//
+// Historique:
+//    Créé le 16/01/2024
+
+class MaClasse {
+    int maVariable;
+
+    MaClasse() {
+        maVariable = 5;
+    }
+}
+
+class Test {
+    int testMethod() {
+        MaClasse obj = new MaClasse();
+        return obj.maVariable();
+    }
+}

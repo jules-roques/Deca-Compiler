@@ -1,0 +1,21 @@
+// Résultat erreur:
+//    19:14
+//    nom de paramètre déjà déclaré (règle 3.12)
+//
+// Description:
+//    tests de programme incorrect contextuellement ( paramètre de la fonction déjà déclaré )
+//
+// Auteur:
+//    Jerome
+//
+// Historique:
+//    cree le 13/01/2024
+
+
+class MaClasse {
+    int champCorrect; 
+    
+    boolean f(int champCorrect){
+      return true;
+    }
+}

@@ -1,0 +1,17 @@
+// Résultat erreur:
+//    17:1
+//
+// Description:
+//    Tests de programme incorrect contextuellement 
+//
+// Auteur:
+//    Eliott
+//
+// Historique:
+//    Créé le 22/01/2024
+
+{
+    int a = 5;
+    while (a) {
+    
+}

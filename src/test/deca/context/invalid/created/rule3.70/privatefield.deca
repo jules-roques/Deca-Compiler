@@ -1,0 +1,22 @@
+// Résultat erreur:
+//    Accès à un champ privé depuis une autre classe (règle 3.70)
+//
+// Description:
+//    Tests de programme incorrect contextuellement (accès à un champ privé depuis l'extérieur)
+//
+// Auteur:
+//    Jerome
+//
+// Historique:
+//    Créé le 16/01/2024
+
+class MaClasse {
+    protected int champPrive = 5;
+}
+
+class AutreClasse {
+    int uneMethode() {
+        MaClasse obj = new MaClasse();
+        return obj.champPrive;
+    }
+}

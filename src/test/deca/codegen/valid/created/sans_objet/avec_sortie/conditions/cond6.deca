@@ -1,0 +1,21 @@
+// Résultat exécution ima
+//    Les deux conditions sont satisfaites
+//
+//
+// Description:
+//    tests d'exécution d'un programme correct par ima
+//
+// Auteur:
+//    Eliott
+//
+// Historique:
+//    cree le 19/01/2024
+
+{
+    int num1 = 8, num2 = 12;
+    if (num1 > 5 && num2 < 15) {
+        printlnx("Les deux conditions sont satisfaites");
+    } else {
+        printlnx("Au moins une condition n'est pas satisfaite");
+    }
+}

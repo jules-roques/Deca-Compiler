@@ -1,0 +1,25 @@
+// Test pour la règle 3.64
+// Date: 18/01/2024
+// Auteur: Jerome
+
+class ClasseAvecVariable {
+    int variable;
+
+    void modifierEtAfficher() {
+        this.variable = 10; // Assignation valide
+        println("Variable: " + this.variable);
+    }
+}
+
+class TestIdentificateursAffectables {
+    void testerIdentificateursAffectables() {
+        ClasseAvecVariable objet = new ClasseAvecVariable();
+        objet.modifierEtAfficher();
+    }
+}
+
+// Programme principal
+{
+    TestIdentificateursAffectables testProgramme = new TestIdentificateursAffectables();
+    testProgramme.testerIdentificateursAffectables();
+}

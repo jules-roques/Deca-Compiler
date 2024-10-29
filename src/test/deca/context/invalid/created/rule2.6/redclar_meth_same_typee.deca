@@ -1,0 +1,25 @@
+// Résultat erreur:
+//    22:8
+//    Nombre incorrect de paramètres dans un appel de méthode (règle 3.74)
+//
+// Description:
+//    tests de programme incorrect contextuellement ( méthode déja déclarée )
+//
+// Auteur:
+//    Jerome
+//
+// Historique:
+//    cree le 13/01/2024
+
+
+class SuperClasse {
+    int maMethode(int a ) {
+        return 0;
+    }
+}
+
+class SousClasse extends SuperClasse {
+    int maMethode(int a , int  b){
+        return 5;
+   }
+}

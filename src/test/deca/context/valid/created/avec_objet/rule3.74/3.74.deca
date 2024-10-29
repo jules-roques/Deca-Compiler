@@ -1,0 +1,24 @@
+// Test pour la règle 3.74
+// Date: 18/01/2024
+// Auteur: Jerome
+
+class ClasseAvecMethodes {
+    void afficherMultiples(int a, int b, int c) {
+        println("a: " + a + ", b: " + b + ", c: " + c);
+    }
+}
+
+class TestListeExpressions {
+    void executionTest() {
+        ClasseAvecMethodes objet = new ClasseAvecMethodes();
+
+        // Appel de méthode avec une liste d'expressions correspondant à la signature
+        objet.afficherMultiples(1, 2, 3);
+    }
+}
+
+// Programme principal
+{
+    TestListeExpressions testProgramme = new TestListeExpressions();
+    testProgramme.executionTest();
+}

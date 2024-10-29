@@ -1,0 +1,21 @@
+// Résultat exécution ima
+//    8
+//
+//
+// Description:
+//    tests d'exécution d'un programme correct par ima
+//
+// Auteur:
+//    Eliott
+//
+// Historique:
+//    cree le 19/01/2024
+
+{
+    boolean bool = !true;
+    if (bool) {
+        println(3);
+    } else {
+        println(8);
+    }
+}

@@ -1,0 +1,15 @@
+// Programme Deca pour tester la redéfinition non conforme d'un champ
+// Date: 21/01/2024
+// Auteur: Jerome
+
+class Parent {
+    int champParent;
+}
+
+class Enfant extends Parent {
+    float champParent; // Redéfinition non conforme du champ 'champParent' de la classe Parent
+}
+
+{
+    // Le corps principal du programme
+}

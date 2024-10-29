@@ -1,0 +1,26 @@
+// Test pour la règle 3.72
+// Date: 18/01/2024
+// Auteur: Jerome
+
+class ClasseAvecMethodes {
+    // Méthode avec signature spécifique
+    int multiplier(int a, int b) {
+        return a * b;
+    }
+}
+
+class ClasseTest {
+    void executionTest() {
+        ClasseAvecMethodes objet = new ClasseAvecMethodes();
+
+        // Appel valide de la méthode avec la signature appropriée
+        int resultat = objet.multiplier(3, 4);
+        println("Résultat de la multiplication: " + resultat);
+    }
+}
+
+// Programme principal
+{
+    ClasseTest testProgramme = new ClasseTest();
+    testProgramme.executionTest();
+}

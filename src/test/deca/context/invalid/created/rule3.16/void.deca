@@ -1,0 +1,15 @@
+// Résultat erreur:
+//    Déclaration de variable de type 'void' (règle 3.17)
+//
+// Description:
+//    Tests de programme incorrect contextuellement (type 'void' pour une variable)
+//
+// Auteur:
+//    Jerome
+//
+// Historique:
+//    Créé le 16/01/2024
+
+class MaClasse {
+    void maVariable; 
+}

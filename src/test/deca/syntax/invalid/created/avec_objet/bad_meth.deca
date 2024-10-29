@@ -1,0 +1,22 @@
+// Résultat erreur:
+//    Déclaration de méthode incorrecte (règle 3.11)
+//
+// Description:
+//    Tests de programme incorrect contextuellement (déclaration de méthode invalide)
+//
+// Auteur:
+//    Jerome
+//
+// Historique:
+//    Créé le 16/01/2024
+
+class MaClasse {
+    int methodeCorrecte() { 
+        return 0;
+    }
+    
+    
+    methodeIncorrecte() {
+        return 0;
+    }
+}

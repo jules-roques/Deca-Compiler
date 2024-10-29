@@ -1,0 +1,37 @@
+// Test pour la règle 3.25
+// Date: 18/01/2024
+// Auteur: Jerome
+
+class ClasseBoucle {
+    void methodeAvecBoucleWhile() {
+        int compteur = 0;
+
+        while (compteur < 5) {
+            println("Compteur: " + compteur);
+            compteur = compteur + 1;
+        }
+    }
+
+    void methodeAvecBoucleConditionComplexe(int limite) {
+        int compteur2 = 0;
+
+        while (compteur2 < limite && compteur2 % 2 == 0) {
+            println("compteur2 pair: " + compteur2);
+            compteur2 = compteur2 + 1;
+        }
+    }
+}
+
+class Test {
+    void executionTest() {
+        ClasseBoucle obj = new ClasseBoucle();
+        obj.methodeAvecBoucleWhile();
+        obj.methodeAvecBoucleConditionComplexe(10);
+    }
+}
+
+// Programme principal
+{
+    Test testProgramme = new Test();
+    testProgramme.executionTest();
+}

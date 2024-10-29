@@ -1,0 +1,29 @@
+// Test pour la règle 2.9
+// Date: 18/01/2024
+// Auteur: Jerome
+
+class ClasseAvecMethodes {
+    // Méthode avec un paramètre de type int, qui est valide (non void)
+    void methodeAvecParametre(int param) {
+        println("Méthode appelée avec paramètre: " + param);
+    }
+
+    // Méthode avec plusieurs paramètres de types valides
+    void methodeAvecPlusieursParametres(int param1, float param2) {
+        println("Paramètres reçus: " + param1 + ", " + param2);
+    }
+}
+
+class Test {
+    void testMethod() {
+        ClasseAvecMethodes objet = new ClasseAvecMethodes();
+        objet.methodeAvecParametre(5);
+        objet.methodeAvecPlusieursParametres(10, 3.14);
+    }
+}
+
+// Programme principal
+{
+    Test testProgramme = new Test();
+    testProgramme.testMethod();
+}

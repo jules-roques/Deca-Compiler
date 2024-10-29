@@ -1,0 +1,17 @@
+// Résultat exécution ima
+// 2.00000e+00
+//
+// Description:
+//    tests d'exécution d'un programme correct par ima
+//
+// Auteur:
+//    Eliott
+//
+// Historique:
+//    cree le 20/01/2024
+
+{
+    float entier1 = 1.0;
+    int entier2 = 1;
+    println(entier1 + entier2);
+}

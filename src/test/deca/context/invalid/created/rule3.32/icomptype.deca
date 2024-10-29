@@ -1,0 +1,18 @@
+// Résultat erreur:
+//    Type incompatible dans l'affectation (règle 3.32)
+//
+// Description:
+//    Tests de programme incorrect contextuellement (type incompatible dans l'affectation)
+//
+// Auteur:
+//    Jerome
+//
+// Historique:
+//    Créé le 16/01/2024
+
+class MaClasse {
+    void maMethode() {
+        int x;
+        x = "texte";
+    }
+}

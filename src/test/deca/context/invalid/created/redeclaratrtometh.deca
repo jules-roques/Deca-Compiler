@@ -1,0 +1,25 @@
+// Programme Deca pour tester la déclaration de plusieurs mauvaises methodes
+// Date: 21/01/2024
+// Auteur: Jerome
+
+class TestDeclarations {
+    
+    int meth() {
+        // Déclaration de plusieurs variables de type int
+        boolean var1, var2, var3, var4;
+        // Assignation des valeurs aux variables
+        var1 = true;
+        var2 = false;
+        return 8;
+        
+    }
+
+   int test = meth;
+}
+
+// Programme principal
+
+{
+    TestDeclarations tt = new TestDeclarations();
+    tt.meth();
+}

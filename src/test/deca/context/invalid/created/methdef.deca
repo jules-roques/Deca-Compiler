@@ -1,0 +1,13 @@
+// Programme Deca pour déclencher une erreur MethodDefinition
+// Date: 21/01/2024
+// Auteur: Jerome
+
+class MyClass {
+    int notAMethod;
+}
+
+{
+    MyClass obj;
+    obj.notAMethod();  // 'notAMethod' n'est pas une méthode
+    // Erreur quand getMethodDefinition est appelé sur 'notAMethod'
+}

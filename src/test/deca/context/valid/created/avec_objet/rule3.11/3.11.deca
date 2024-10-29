@@ -1,0 +1,32 @@
+// Test pour la règle 3.11
+// Date: 18/01/2024
+// Auteur: Jerome
+
+class ClasseAvecMethodes {
+    // Déclaration d'une méthode avec type de retour, paramètres et corps
+    int methodeAvecParametresEtRetour(int param) {
+        // Corps de la méthode
+        println("Méthode appelée avec paramètre: " + param);
+        return param * 2;  // Retour d'une valeur calculée
+    }
+
+    // Méthode sans paramètres et sans type de retour (void)
+    void methodeSansRetour() {
+        println("Méthode sans retour.");
+    }
+}
+
+class Test {
+    void testMethod() {
+        ClasseAvecMethodes objet = new ClasseAvecMethodes();
+        int resultat = objet.methodeAvecParametresEtRetour(5);
+        println("Résultat retourné par la méthode: " + resultat);
+        objet.methodeSansRetour();
+    }
+}
+
+// Programme principal
+{
+    Test testProgramme = new Test();
+    testProgramme.testMethod();
+}

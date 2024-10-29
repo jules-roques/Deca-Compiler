@@ -1,0 +1,15 @@
+// Résultat erreur:
+//    Type non défini dans la déclaration de variable (règle 3.17)
+//
+// Description:
+//    Tests de programme incorrect contextuellement (type non défini)
+//
+// Auteur:
+//    Jerome
+//
+// Historique:
+//    Créé le 16/01/2024
+
+class MaClasse {
+    TypeInexistant maVariable;  
+}

@@ -1,0 +1,29 @@
+// Test pour les accès valides selon la règle 3.70
+// Date: 18/01/2024
+// Auteur: Jerome
+
+class ClasseBase {
+    protected int champProtege = 15;
+
+}
+
+class ClasseDerivee extends ClasseBase {
+
+    void afficherChampProtege() {
+        // Accès valide au champ protégé hérité
+        println("Champ protégé: " + champProtege);
+    }
+}
+
+class Test {
+    void executionTest() {
+        ClasseDerivee objetDerive = new ClasseDerivee();
+        objetDerive.afficherChampProtege();  // Doit afficher "Champ protégé: 15"
+    }
+}
+
+// Programme principal
+{
+    Test testProgramme = new Test();
+    testProgramme.executionTest();
+}

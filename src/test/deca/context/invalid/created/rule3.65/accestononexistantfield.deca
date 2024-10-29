@@ -1,0 +1,22 @@
+// Résultat erreur:
+//    Accès à un champ non-existant dans une classe (règle 3.65)
+//
+// Description:
+//    Tests de programme incorrect contextuellement (accès à un champ inexistant)
+//
+// Auteur:
+//    Jerome
+//
+// Historique:
+//    Créé le 16/01/2024
+
+class MaClasse {
+    int champExistant = 5;
+}
+
+class AutreClasse {
+    int uneMethode() {
+        MaClasse obj = new MaClasse();
+        return obj.champInexistant;
+    }
+}

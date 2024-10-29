@@ -1,0 +1,16 @@
+// Résultat erreur:
+//    15:4
+//    le type doit être : “int, float, string” (règle 3.31)
+//
+// Description:
+//    tests de programme incorrect contextuellement ( le type doit être : “int, float, string”)
+//
+// Auteur:
+//    Carmel
+//
+// Historique:
+//    cree le 13/01/2024
+
+{
+    println(true);
+}

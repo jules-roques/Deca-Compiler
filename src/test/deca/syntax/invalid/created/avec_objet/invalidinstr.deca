@@ -1,0 +1,20 @@
+// Résultat erreur:
+//    Instruction invalide dans le corps de 'While' (règle 3.25)
+//
+// Description:
+//    Tests de programme incorrect contextuellement (instruction invalide dans 'While')
+//
+// Auteur:
+//    Jerome
+//
+// Historique:
+//    Créé le 16/01/2024
+
+class MaClasse {
+    void maMethode() {
+        boolean condition = true;
+        while (condition) {
+            int y;
+        }
+    }
+}

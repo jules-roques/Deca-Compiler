@@ -1,0 +1,38 @@
+// Règles attendues (occurrences dans les lignes du fichier résultat):
+// Program 33:0
+//     ListDeclClass 
+//     Main 33:0
+//         ListDeclVar
+//             DeclVar 34:8
+//                 Identifier 34:4 
+//                 Identifier 34:8 
+//                 Initialization 34:16
+//                     Int 34:16 
+//         ListInst
+//             While 35:4
+//                     Lower 35:17
+//                         Identifier 35:11 
+//                         Int 35:19 
+//                     ListInst
+//                         Assign 36:8
+//                             Identifier 36:8 
+//                             Plus 36:22                                
+//                                 Identifier 36:16
+//                                 Int 36:24 
+//
+// Auteur: Jerome
+//
+// Historique:
+//    cree le 14/01/2024
+//
+// Description:
+//    test de programme avec une boucle While.
+
+
+
+{
+    int count = 0;
+    while (count < 5) {
+        count = count + 1;
+    }
+}

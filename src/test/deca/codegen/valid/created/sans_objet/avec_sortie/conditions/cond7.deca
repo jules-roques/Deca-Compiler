@@ -1,0 +1,23 @@
+// Résultat exécution ima
+//    La personne n'a pas droit à une réduction
+//
+//
+// Description:
+//    tests d'exécution d'un programme correct par ima
+//
+// Auteur:
+//    Eliott
+//
+// Historique:
+//    cree le 19/01/2024
+
+{
+    int agePersonne = 30;
+    boolean estEtudiant = false;
+    boolean aReduction = (agePersonne < 25 && estEtudiant) || agePersonne >= 60;
+    if (aReduction) {
+        println("La personne a droit à une réduction");
+    } else {
+        println("La personne n'a pas droit à une réduction");
+    }
+}

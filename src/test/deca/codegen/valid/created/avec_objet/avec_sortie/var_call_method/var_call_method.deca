@@ -1,0 +1,35 @@
+// Résultat exécution ima
+// 25.0
+//
+// Description:
+//    tests d'exécution d'un programme correct par ima
+//
+// Auteur:
+//    Eliott
+//
+// Historique:
+//    cree le 21/01/2024
+
+class Book {
+    private int nbPages;
+    private int nbChapitres;
+
+    public Book(int nbPages, int nbChapitres) {
+        this.nbPages = nbPages;
+        this.nbChapitres = nbChapitres;
+    }
+
+    public int getnbPages() {
+        return nbPages;
+    }
+
+    public float getnbChapitres() {
+        return nbChapitres;
+    }
+}
+
+{
+    Book book1 = new Book(1000, 20);
+
+    println(book2.getnbChapitres() + 5);
+}

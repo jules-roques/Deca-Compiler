@@ -1,0 +1,20 @@
+// Programme Deca pour tester l'opérateur MINUS dans sum_expr
+// Date: 21/01/2024
+// Auteur: Jerome
+
+class TestMinus {
+    void test() {
+        int a = 10;
+        int b = 5;
+
+        // Utilisation de l'opérateur MINUS
+        int resultat = a - b;
+        println("Resultat de " + a + " - " + b + " : " + resultat);
+    }
+}
+
+// Programme principal
+{
+    TestMinus test = new TestMinus();
+    test.test();
+}

@@ -1,0 +1,25 @@
+// Programme Deca pour tester l'opérateur relse if
+// Date: 21/01/2024
+// Auteur: Jerome
+
+class TestIfElseIf {
+    void test() {
+        int a = 5;
+        int b = 10;
+
+        if (a == 5) {
+            println("a est 5");
+        } else if (b == 10) {
+            // Ce bloc devrait déclencher le cas de 'else if' dans votre parseur
+            println("b est 10");
+        } else {
+            println("Ni a est 5, ni b est 10");
+        }
+    }
+}
+
+// Programme principal pour exécuter le test
+{
+    TestIfElseIf testObj = new TestIfElseIf();
+    testObj.test();
+}

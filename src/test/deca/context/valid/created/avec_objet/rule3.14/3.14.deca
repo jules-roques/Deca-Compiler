@@ -1,0 +1,39 @@
+// Test révisé pour la règle 3.14
+// Date: 18/01/2024
+// Auteur: Jerome
+
+class ClasseAvecMethodes {
+    // Méthode avec un corps de méthode bien formé utilisant une boucle while
+    void methodeAvecBoucleEtCondition(int param) {
+        int i = 0;
+        if (param > 0) {
+            while (i < param) {
+                println("i: " + i);
+                i = i + 1;
+            }
+        } else {
+            println("Paramètre négatif ou nul.");
+        }
+    }
+
+    // Méthode retournant une valeur calculée
+    int methodeAvecRetour(int param2) {
+        int resultat = param2 * 2;
+        return resultat;
+    }
+}
+
+class Test {
+    void testMethod() {
+        ClasseAvecMethodes objet = new ClasseAvecMethodes();
+        int resultat = objet.methodeAvecRetour(3);
+        objet.methodeAvecBoucleEtCondition(5);
+        println("Résultat retourné: " + resultat);
+    }
+}
+
+// Programme principal
+{
+    Test testProgramme = new Test();
+    testProgramme.testMethod();
+}

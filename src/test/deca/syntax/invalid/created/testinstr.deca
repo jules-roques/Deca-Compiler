@@ -1,0 +1,8 @@
+// Programme Deca pour tester un programme sans main et sans listdeclclass
+// Date: 22/01/2024
+// Auteur: Jerome
+
+
+
+println("Casted object created");
+    

@@ -1,0 +1,18 @@
+// Résultat erreur:
+//    Accès à un champ d'une classe non-existante (règle 3.65)
+//
+// Description:
+//    Tests de programme incorrect contextuellement (classe non-existante)
+//
+// Auteur:
+//    Jerome
+//
+// Historique:
+//    Créé le 16/01/2024
+
+class AutreClasse {
+    int uneMethode() {
+        ClasseInexistante obj = new ClasseInexistante();
+        return obj.champQuelconque; 
+    }
+}

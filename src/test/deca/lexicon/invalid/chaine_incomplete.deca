@@ -1,0 +1,13 @@
+// Ligne erreur:
+//    13:0
+//
+// Description:
+//    tests de programme incorrect lexicalement (chaine non terminee)
+//
+// Auteur:
+//    Jules
+//
+// Historique:
+//    cree le 10/01/2024
+
+"chaine pas finie

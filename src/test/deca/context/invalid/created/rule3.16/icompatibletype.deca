@@ -1,0 +1,15 @@
+// Résultat erreur:
+//    Initialisation de variable avec type incompatible (règle 3.17)
+//
+// Description:
+//    Tests de programme incorrect contextuellement (initialisation de type incompatible)
+//
+// Auteur:
+//    Jerome
+//
+// Historique:
+//    Créé le 16/01/2024
+
+class MaClasse {
+    int maVariable = "fff"; 
+}

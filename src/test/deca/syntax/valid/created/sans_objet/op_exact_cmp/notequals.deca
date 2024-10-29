@@ -1,0 +1,31 @@
+// Règles attendues (occurences dans lignes du fichier résultat):
+//  Program 26:0
+//      ListDeclClass
+//      Main 26:0
+//          ListDeclVar
+//              DeclVar 27:12
+//                  Identifier 27:4
+//                  Identifier 27:12
+//                  Initialization 27:16
+//                      BooleanLiteral 27:16
+//          ListInst
+//              Assign 28:4
+//                  Identifier 28:4
+//                      NotEquals 28:8
+//                          BooleanLiteral 28:9
+//                          BooleanLiteral 28:18
+//
+// Auteur: Jerome
+//
+// Historique:
+//    cree le 14/01/2024
+//
+// Description:
+//    test de programme syntaxiquement correct.
+
+{
+    boolean i = true;
+    i = (false != true);
+}
+
+

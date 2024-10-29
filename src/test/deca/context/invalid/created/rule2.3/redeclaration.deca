@@ -1,0 +1,17 @@
+// Résultat erreur:
+//    16:7
+//    nom d'attribut déjà déclaré (règle 2.4)
+//
+// Description:
+//    tests de programme incorrect contextuellement ( fonction redeclare un identificateur )
+//
+// Auteur:
+//    Jerome
+//
+// Historique:
+//    cree le 13/01/2024
+
+{
+   int i;
+   int i=3;
+}

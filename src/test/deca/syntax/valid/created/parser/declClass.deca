@@ -1,0 +1,14 @@
+class A {
+    int x;
+    int getX() {
+        return x;
+    }
+    int test() {
+        "string test";
+    }
+}
+
+{
+    A a = new A();
+    a.setX(1);
+}

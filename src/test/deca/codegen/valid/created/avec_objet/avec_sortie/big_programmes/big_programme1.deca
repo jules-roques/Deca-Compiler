@@ -1,0 +1,106 @@
+// Résultat exécution ima
+// 18
+//
+// Description:
+//    tests d'exécution d'un programme correct par ima
+//
+// Auteur:
+//    Eliott
+//
+// Historique:
+//    cree le 21/01/2024
+
+class Animal {
+    public int getPoids() {
+        return poids;
+    }
+
+    public int getTaille() {
+        return taille;
+    }
+}
+
+class Canard extends Animal {
+    int poids = 10;
+    int taille = 50;
+}
+
+class Vache extends Animal {
+    int poids = 1000;
+    int taille = 180;
+}
+
+class Chien extends Animal {
+    int poids = 5;
+    int taille = 100;
+}
+
+class Chat extends Animal {
+    int poids = 3;
+    int taille = 20;
+}
+
+class Elephant extends Animal {
+    int poids = 10000;
+    int taille = 500;
+}
+
+class Tigre extends Animal {
+    int poids = 800;
+    int taille = 250;
+}
+
+class Elan extends Animal {
+    int poids = 450;
+    int taille = 310;
+}
+
+class Chacal extends Animal {
+    int poids = 700;
+    int taille = 200;
+}
+
+class Faucon extends Animal {
+    int poids = 55;
+    int taille = 300;
+}
+
+class Fourmis extends Animal {
+    int poids = 1;
+    int taille = 1;
+}
+
+class Chenille extends Animal {
+    int poids = 2;
+    int taille = 1;
+}
+
+class Diable extends Animal {
+    int poids = 20;
+    int taille = 30;
+}
+
+class Crabe extends Animal {
+    int poids = 2;
+    int taille = 10;
+}
+
+class Dragon extends Animal {
+    int poids = 100000;
+    int taille = 1000;
+}
+
+class Bibite extends Animal {
+    int poids = 3;
+    int taille = 17;
+}
+
+class Dodo extends Animal {
+    int poids = 300;
+    int taille = 75;
+}
+
+{
+    Chenille chenille = new Chenille();
+    println(chenille.getPoids());
+}

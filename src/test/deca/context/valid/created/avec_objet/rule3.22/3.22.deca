@@ -1,0 +1,38 @@
+// Test pour la règle 3.22
+// Date: 18/01/2024
+// Auteur: Jerome
+
+class ClasseConditionnelle {
+    void testerConditions() {
+        int variableTest = 10;
+
+        // Condition simple
+        if (variableTest > 5) {
+            println("VariableTest est plus grand que 5");
+        } else {
+            println("VariableTest n'est pas plus grand que 5");
+        }
+
+        // Condition imbriquée
+        if (variableTest > 5) {
+            if (variableTest < 15) {
+                println("VariableTest est entre 5 et 15");
+            }
+        } else {
+            println("VariableTest est 5 ou moins");
+        }
+    }
+}
+
+class Test {
+    void executionTest() {
+        ClasseConditionnelle obj = new ClasseConditionnelle();
+        obj.testerConditions();
+    }
+}
+
+// Programme principal
+{
+    Test testProgramme = new Test();
+    testProgramme.executionTest();
+}

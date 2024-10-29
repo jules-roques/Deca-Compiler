@@ -1,0 +1,30 @@
+// Test exhaustif pour la règle 3.37
+// Date: 18/01/2024
+// Auteur: Jerome
+
+class TestOperateursUnaires {
+    void tester() {
+        // Cas valides
+        int positif = 5;
+        int negatif = -positif;  // Négation d'un entier
+
+        boolean vrai = true;
+        boolean faux = !(vrai);  // Négation logique
+        
+        println("Négatif de 5: " + negatif);
+         
+    }
+}
+
+class Test {
+    void executionTest() {
+        TestOperateursUnaires obj = new TestOperateursUnaires();
+        obj.tester();
+    }
+}
+
+// Programme principal
+{
+    Test testProgramme = new Test();
+    testProgramme.executionTest();
+}

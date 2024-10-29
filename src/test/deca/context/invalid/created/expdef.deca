@@ -1,0 +1,13 @@
+// Programme Deca pour déclencher une erreur ExpDefinition
+// Date: 21/01/2024
+// Auteur: Jerome
+
+class MyClass {
+    int notAnExp;
+}
+
+{
+    MyClass obj = new MyClass();
+    if (obj.notAnExp) { } // 'notAnExp' devrait être une expression
+    // Erreur quand getExpDefinition est appelé dans un contexte d'expression
+}

@@ -1,0 +1,23 @@
+// Résultat exécution ima
+//    c
+//
+//
+// Description:
+//    tests d'exécution d'un programme correct par ima
+//
+// Auteur:
+//    Eliott
+//
+// Historique:
+//    cree le 19/01/2024
+
+{
+    int entier = 3;
+    if (entier == 1) {
+        println("a");
+    } else if (entier == 2) {
+        println("b");
+    } else if (entier == 3) {
+        println("c");
+    }
+}

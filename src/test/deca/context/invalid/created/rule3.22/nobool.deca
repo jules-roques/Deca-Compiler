@@ -1,0 +1,11 @@
+// Résultat erreur:
+//    16:12
+//    Condition non booléenne dans 'if' (règle 3.22)
+
+class MaClasse {
+    void maMethode() {
+        int x = 5;
+        if (x) { 
+        }
+    }
+}

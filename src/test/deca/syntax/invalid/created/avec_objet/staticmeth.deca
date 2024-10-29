@@ -1,0 +1,21 @@
+// Résultat erreur:
+//    Utilisation de 'This' dans une méthode statique (règle 3.43)
+//
+// Description:
+//    Tests de programme incorrect contextuellement ('This' utilisé dans un contexte statique)
+//
+// Auteur:
+//    Jerome
+//
+// Historique:
+//    Créé le 16/01/2024
+
+class MaClasse {
+    static int maMethodeStatique() {
+        return This.maMethode();
+    }
+
+    int maMethode() {
+        return 5;
+    }
+}

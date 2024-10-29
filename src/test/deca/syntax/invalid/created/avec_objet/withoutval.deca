@@ -1,0 +1,17 @@
+// Résultat erreur:
+//    'Return' sans valeur dans une méthode non-void (règle 3.24)
+//
+// Description:
+//    Tests de programme incorrect contextuellement ('Return' sans valeur dans une méthode avec type de retour)
+//
+// Auteur:
+//    Jerome
+//
+// Historique:
+//    Créé le 16/01/2024
+
+class MaClasse {
+    int maMethode() {
+        return; 
+    }
+}

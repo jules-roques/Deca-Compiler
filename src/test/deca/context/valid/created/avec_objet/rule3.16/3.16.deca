@@ -1,0 +1,31 @@
+// Test complet pour la règle 3.16
+// Date: 18/01/2024
+// Auteur: Jerome
+
+class ClassePrincipale {
+    int variableClasse = 5;
+
+    void methodeAvecVariablesLocales() {
+        int variableLocale = 10;
+        variableClasse = variableLocale + variableClasse;
+    }
+
+    void methodeAvecParametre(int parametre) {
+        variableClasse = parametre + variableClasse;
+    }
+}
+
+class ClasseTest {
+    void testerVariables() {
+        ClassePrincipale objet = new ClassePrincipale();
+        objet.methodeAvecVariablesLocales();
+        objet.methodeAvecParametre(15);
+        println(objet.variableClasse); // Affiche le résultat des opérations sur la variableClasse
+    }
+}
+
+// Programme principal
+{
+    ClasseTest test = new ClasseTest();
+    test.testerVariables();
+}

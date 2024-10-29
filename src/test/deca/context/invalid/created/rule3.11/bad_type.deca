@@ -1,0 +1,23 @@
+// Résultat erreur:
+//    21:8
+//    type de retour de méthode incorrect (règle 3.11)
+//
+// Description:
+//    Tests de programme incorrect contextuellement (déclaration de méthode invalide)
+//
+// Auteur:
+//    Jerome
+//
+// Historique:
+//    Créé le 16/01/2024
+
+class MaClasse {
+    int methodeCorrecte() { 
+        return 0;
+    }
+    
+    
+    float methodeIncorrecte() {
+        return 1;
+    }
+}

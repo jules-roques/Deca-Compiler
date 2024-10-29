@@ -1,0 +1,24 @@
+// Résultat exécution ima
+// 18
+//
+// Description:
+//    tests d'exécution d'un programme correct par ima
+//
+// Auteur:
+//    Eliott
+//
+// Historique:
+//    cree le 21/01/2024
+
+class Animal {
+    float poids;
+    float taille;
+
+    public int setPoids(int poids) {
+        this.poids = poids;
+    }
+
+    public int setTaille(int taille) {
+        this.taille = taille;
+    }
+}

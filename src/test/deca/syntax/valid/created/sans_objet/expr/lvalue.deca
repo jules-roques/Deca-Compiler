@@ -1,0 +1,34 @@
+// Règles attendues (occurences dans lignes du fichier résultat):
+// Program 30:0
+//     ListDeclClass
+//     Main 30:0
+//         ListDeclVar
+//             DeclVar 31:8
+//                 Identifier 31:4 
+//                 Identifier 31:8 
+//                 Initialization 31:12
+//                     Int 31:12 
+//             DeclVar 32:8
+//                 Identifier 32:4 
+//                 Identifier 32:8 
+//                 NoInitialization
+//         ListInst
+//             Assign 33:4 
+//                  Identifier 33:4 
+//                  Identifier 33:8 
+//
+// Auteur: Jerome
+//
+// Historique:
+//    cree le 14/01/2024
+//
+// Description:
+//    test de programme syntaxiquement correct.
+
+
+
+{
+    int a = 10;
+    int b;
+    b = a;
+}

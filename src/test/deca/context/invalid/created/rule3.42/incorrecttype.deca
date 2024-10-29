@@ -1,0 +1,18 @@
+// Résultat erreur:
+//    Utilisation de 'New' avec un type incorrect (règle 3.42)
+//
+// Description:
+//    Tests de programme incorrect contextuellement ('New' utilisé avec un type incorrect)
+//
+// Auteur:
+//    Jerome
+//
+// Historique:
+//    Créé le 16/01/2024
+
+class MaClasse {
+    float maMethode() {
+        int obj = new string();
+        return 4.5;
+    }
+}

@@ -1,0 +1,23 @@
+// Résultat exécution ima
+//    oui
+//
+// Description:
+//    tests d'exécution d'un programme correct par ima
+//
+// Auteur:
+//    Eliott
+//
+// Historique:
+//    cree le 19/01/2024
+
+{
+    boolean bool1 = true;
+    boolean bool2 = false;
+    if (!bool1) {
+        printx("non");
+    } else {
+        if (!bool2) {
+            printx("oui");
+        }
+    }
+}

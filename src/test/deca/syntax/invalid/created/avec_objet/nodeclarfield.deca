@@ -1,0 +1,22 @@
+// Résultat erreur:
+//    Accès à un champ non déclaré (règle 3.70)
+//
+// Description:
+//    Tests de programme incorrect contextuellement (accès à un champ non déclaré)
+//
+// Auteur:
+//    Jerome
+//
+// Historique:
+//    Créé le 16/01/2024
+
+class MaClasse {
+    public int champExistant = 10;
+}
+
+class AutreClasse {
+    int uneMethode() {
+        MaClasse obj = new MaClasse();
+        return obj.champInexistant;
+    }
+}

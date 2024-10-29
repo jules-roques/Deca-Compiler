@@ -1,0 +1,13 @@
+// Programme Deca pour déclencher une erreur VariableDefinition
+// Date: 21/01/2024
+// Auteur: Jerome
+
+class MyClass {
+    void notAVariable() {}
+}
+
+{
+    MyClass obj = new MyClass();
+    obj.notAVariable = 5; // 'notAVariable' est une méthode, pas une variable
+    // Cela va déclencher l'erreur VariableDefinition
+}

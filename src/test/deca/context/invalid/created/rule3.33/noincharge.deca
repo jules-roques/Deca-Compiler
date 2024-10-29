@@ -1,0 +1,19 @@
+// Résultat erreur:
+//    Combinaison de types non prise en charge par l'opérateur (règle 3.33)
+//
+// Description:
+//    Tests de programme incorrect contextuellement (combinaison de types non prise en charge)
+//
+// Auteur:
+//    Jerome
+//
+// Historique:
+//    Créé le 16/01/2024
+
+class MaClasse {
+    void maMethode() {
+        string x = "texte";
+        string y = "autre texte";
+        string z = x / y;
+    }
+}

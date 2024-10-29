@@ -1,0 +1,27 @@
+// Programme Deca pour tester 'instanceof'
+// Date: 21/01/2024
+// Auteur: Jerome
+
+class BaseClass {
+}
+
+class DerivedClass extends BaseClass {
+}
+
+class TestInstanceOf {
+    void test() {
+        DerivedClass derivedObj = new DerivedClass();
+        // Test de instanceof
+        if (derivedObj instanceof BaseClass) {
+            println("derivedObj est une instance de BaseClass");
+        } else {
+            println("derivedObj n'est pas une instance de BaseClass");
+        }
+    }
+}
+
+// Programme principal
+{
+    TestInstanceOf test = new TestInstanceOf();
+    test.test();
+}

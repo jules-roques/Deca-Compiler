@@ -1,0 +1,22 @@
+// Résultat erreur:
+//    Instruction invalide dans le bloc 'then' ou 'else' (règle 3.22)
+//
+// Description:
+//    Tests de programme incorrect contextuellement (instruction invalide dans 'if' ou 'else')
+//
+// Auteur:
+//    Jerome
+//
+// Historique:
+//    Créé le 16/01/2024
+
+class MaClasse {
+    void maMethode() {
+        boolean condition = true;
+        if (condition) {
+            int y; 
+        } else {
+            return 5; 
+        }
+    }
+}

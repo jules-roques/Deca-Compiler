@@ -1,0 +1,13 @@
+// Programme Deca pour déclencher une erreur FieldDefinition
+// Date: 21/01/2024
+// Auteur: Jerome
+
+class MyClass {
+    void notAField() {}
+}
+
+{
+    MyClass obj = new MyClass();
+    int test = obj.notAField; // 'notAField' est une méthode, pas un champ
+    // Cela va déclencher l'erreur FieldDefinition
+}

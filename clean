@@ -1,0 +1,5 @@
+# Pour supprimer les fichiers générés par les tests
+
+find . -type f -name '*.ass' -delete
+find . -type f -name '*.lis' -delete
+find . -type f -name '*.res' -delete

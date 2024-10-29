@@ -1,0 +1,64 @@
+// Résultat exécution ima
+// 18
+//
+// Description:
+//    tests d'exécution d'un programme correct par ima
+//
+// Auteur:
+//    Eliott
+//
+// Historique:
+//    cree le 21/01/2024
+
+class A {
+    void printMessage() {
+        println("Bonjour depuis la classe A !");
+    }
+}
+
+class B {
+    int multiply(int a, int b) {
+        return a * b;
+    }
+}
+
+class C {
+    void checkCondition(boolean condition) {
+        if (condition) {
+            println("La condition est vraie.");
+        } else {
+            println("La condition est fausse.");
+        }
+    }
+}
+
+class D extends A {
+    int entier;
+    int setEntier(entier) {
+        this.entier = entier;
+    }
+}
+
+{
+    A instanceA = new A();
+    instanceA.printMessage();
+
+    B instanceB = new B();
+    int result = instanceB.multiply(5, 3);
+
+    C instanceC = new C();
+    boolean condition = true;
+    instanceC.checkCondition(condition);
+
+    D instanceD = new D();
+
+    int x = 10;
+    if (x > 5) {
+        x = 0;
+    } else {
+        x = 3;
+    }
+    println(x);
+}
+
+

@@ -1,0 +1,18 @@
+// Résultat erreur:
+//    Déclaration de variable après utilisation (règle 3.18)
+//
+// Description:
+//    Tests de programme incorrect contextuellement (variable utilisée avant déclaration)
+//
+// Auteur:
+//    Jerome
+//
+// Historique:
+//    Créé le 16/01/2024
+
+class MaClasse {
+    void maMethode() {
+        println(maVariable); 
+        int maVariable = 5;
+    }
+}

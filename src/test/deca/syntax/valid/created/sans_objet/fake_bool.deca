@@ -1,0 +1,15 @@
+// Résultat erreur:
+//    
+//
+// Description:
+//    Tests de programme incorrect contextuellement 
+//
+// Auteur:
+//    Eliott
+//
+// Historique:
+//    Créé le 22/01/2024
+
+{
+    boolean condition = falsee;
+}

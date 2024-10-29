@@ -1,0 +1,17 @@
+// Résultat erreur:
+//    17:0
+//    missing '{' at '}'
+//
+// Description:
+//    Tests de programme incorrect contextuellement (absence de 'then' ou 'else')
+//
+// Auteur:
+//    Jerome
+//
+// Historique:
+//    Créé le 16/01/2024
+
+
+{  
+    if (true)    
+}

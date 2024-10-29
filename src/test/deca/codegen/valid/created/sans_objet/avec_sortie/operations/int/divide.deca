@@ -1,0 +1,16 @@
+// Résultat exécution ima
+//  57
+//
+// Description:
+//    tests d'exécution d'un programme correct par ima
+//
+// Auteur:
+//    Jules
+//
+// Historique:
+//    cree le 22/01/2024
+
+{
+    int quotient = 9/2;
+    printlnx(quotient);
+}

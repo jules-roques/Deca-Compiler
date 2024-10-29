@@ -1,0 +1,24 @@
+// Programme Deca pour tester 'cast'
+// Date: 22/01/2024
+// Auteur: Jerome
+
+class BaseClass {
+}
+
+class DerivedClass extends BaseClass {
+}
+
+class TestCasting {
+    void test() {
+        DerivedClass derivedObj = new DerivedClass();
+        // Test de cast
+        BaseClass castedObj = (BaseClass)(derivedObj); // Cast de DerivedClass à BaseClass
+        println("Casted object created");
+    }
+}
+
+// Programme principal
+{
+    TestCasting test = new TestCasting();
+    test.test();
+}

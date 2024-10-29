@@ -1,0 +1,17 @@
+// Résultat exécution ima
+// -2
+//
+// Description:
+//    tests d'exécution d'un programme correct par ima
+//
+// Auteur:
+//    Jules
+//
+// Historique:
+//    cree le 15/01/2024
+
+{
+   int i = -2;
+   print(i);
+}
+

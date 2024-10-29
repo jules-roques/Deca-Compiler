@@ -1,0 +1,30 @@
+// Résultat exécution ima
+//    gagné
+//
+//
+// Description:
+//    tests d'exécution d'un programme correct par ima
+//
+// Auteur:
+//    Eliott
+//
+// Historique:
+//    cree le 19/01/2024
+
+{
+    if (true) {
+        if (true) {
+            if (true) {
+                if (true) {
+                    if (true) {
+                        if (!true) {
+                            println("perdu");
+                        } else {
+                            println("gagné");
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

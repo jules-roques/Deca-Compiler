@@ -1,0 +1,28 @@
+// Programme Deca pour tester l'opérateur print
+// Date: 21/01/2024
+// Auteur: Jerome
+
+class TestInstructions {
+    void test() {
+        // Cas SEMI : Instruction vide avec point-virgule
+        ;
+
+        // Cas PRINTLN : Impression standard
+        println("Test PRINTLN");
+
+        // Cas PRINT : Impression standard
+        print("Test PRINT");
+
+        // Cas PRINTX : Impression avec une variante
+        printx("Test PRINTX");
+
+        // Cas PRINTLNX : Impression avec retour à la ligne (assumant que PRINTLNX est similaire à PRINTLN)
+        printlnx("Test PRINTLNX");
+    }
+}
+
+// Programme principal
+{
+    TestInstructions test = new TestInstructions();
+    test.test();
+}

@@ -1,0 +1,32 @@
+// Test pour la règle 3.32
+// Date: 18/01/2024
+// Auteur: Jerome
+
+class ClasseAssignation {
+    int entier;
+    float flottant;
+
+    void methodeAssignation() {
+        entier = 5;  // Assignation compatible avec int
+        flottant = 3.14f;  // Assignation compatible avec float
+
+        // Exemples d'assignation avec expressions
+        entier = entier + 2;  // Expression arithmétique compatible avec int
+        flottant = entier + flottant;  // Expression mixte compatible avec float
+    }
+}
+
+class Test {
+    void executionTest() {
+        ClasseAssignation obj = new ClasseAssignation();
+        obj.methodeAssignation();
+        println(obj.entier);
+        println(obj.flottant);
+    }
+}
+
+// Programme principal
+{
+    Test testProgramme = new Test();
+    testProgramme.executionTest();
+}

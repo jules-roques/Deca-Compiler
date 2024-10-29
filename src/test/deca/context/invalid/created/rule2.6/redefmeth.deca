@@ -1,0 +1,23 @@
+// Résultat erreur:
+//    Redéfinition de méthode non conforme (règle 2.6)
+//
+// Description:
+//    Tests de programme incorrect contextuellement (signature de méthode ou type de retour non conforme)
+//
+// Auteur:
+//    Jerome
+//
+// Historique:
+//    Créé le 16/01/2024
+
+class SuperClasse {
+    int maMethode() {
+        return 0;
+    }
+}
+
+class SousClasse extends SuperClasse {
+    float maMethode() { 
+        return 0.0;
+    }
+}
