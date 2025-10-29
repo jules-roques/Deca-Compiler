@@ -15,6 +15,6 @@ Projet réalisé par :
 
 ## Documentation
 Pour plus d’informations, veuillez consulter :
-- [Documentation de conception](GL44_Documentation.pdf)
-- [Manuel utilisateur](Manuel-Utilisateur.pdf)
-- [Bilan de projet](Bilan_Projet.pdf)
+- [Documentation de conception](docs/GL44_Documentation.pdf)
+- [Manuel utilisateur](docs/Manuel-Utilisateur.pdf)
+- [Bilan de projet](docs/Bilan_Projet.pdf)
